@@ -5,7 +5,7 @@ const myChart = new Chart(ctx1, {
     labels: ["Via pix", "Cartão de Credito", "Boleto"],
     datasets: [
       {
-        label: "# of Votes",
+        label: "Metodos",
         data: [600, 800, 1000],
         backgroundColor: [
           "rgba(12, 50, 222, 1)",
@@ -22,12 +22,12 @@ const myChart = new Chart(ctx1, {
 
 const ctx2 = document.getElementById("chart-2").getContext("2d");
 const myChart2 = new Chart(ctx2, {
-  type: 'doughnut',
+  type: 'bar',
   data: {
     labels: ["Mensal - Intensivo", "A vista - Intensivo", "Outros"],
     datasets: [
       {
-        label: "Earning",
+        label: "Vendas",
         data: [600, 1200, 400],
         backgroundColor: [
           "rgba(12, 50, 222, 1)",
